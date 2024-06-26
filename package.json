@@ -1,7 +1,7 @@
 {
-  "name": "shrek",
+  "name": "@henchtab/shrek",
   "version": "0.1.0",
-  "description": "",
+  "description": "Ogres are like onions, and testing your smart contracts on the TON blockchain is no different!",
   "type": "module",
   "exports": {
     ".": {
@@ -16,7 +16,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "tsup": "^8.1.0",
     "typescript": "^5.5.2"
@@ -24,5 +24,17 @@
   "peerDependencies": {
     "@ton/core": "^0.56.3",
     "@ton/sandbox": "^0.20.0"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henchtab/shrek.git"
+  },
+  "bugs": {
+    "url": "https://github.com/henchtab/shrek/issues"
+  },
+  "homepage": "https://github.com/henchtab/shrek#readme"
 }
