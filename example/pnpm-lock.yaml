@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@henchtab/shrek':
         specifier: file:../
-        version: shrek@file:..(@ton/core@0.56.3(@ton/crypto@3.2.0))(@ton/sandbox@0.19.0(@ton/core@0.56.3(@ton/crypto@3.2.0))(@ton/crypto@3.2.0))
+        version: file:..(@ton/core@0.56.3(@ton/crypto@3.2.0))(@ton/sandbox@0.19.0(@ton/core@0.56.3(@ton/crypto@3.2.0))(@ton/crypto@3.2.0))
       '@ton/blueprint':
         specifier: ^0.21.0
         version: 0.21.0(@ton/core@0.56.3(@ton/crypto@3.2.0))(@ton/crypto@3.2.0)(@ton/ton@13.11.2(@ton/core@0.56.3(@ton/crypto@3.2.0))(@ton/crypto@3.2.0))(@types/node@20.14.9)(typescript@5.5.2)
@@ -230,6 +230,12 @@ packages:
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
     engines: {node: '>=12'}
+
+  '@henchtab/shrek@file:..':
+    resolution: {directory: .., type: directory}
+    peerDependencies:
+      '@ton/core': ^0.56.3
+      '@ton/sandbox': ^0.20.0
 
   '@ipld/dag-pb@2.1.18':
     resolution: {integrity: sha512-ZBnf2fuX9y3KccADURG5vb9FaOeMjFkCrNysB0PtftME/4iCTjxfaLoNq/IAh5fTqUOMXvryN6Jyka4ZGuMLIg==}
@@ -1608,12 +1614,6 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  shrek@file:..:
-    resolution: {directory: .., type: directory}
-    peerDependencies:
-      '@ton/core': ^0.56.3
-      '@ton/sandbox': ^0.20.0
-
   side-channel@1.0.6:
     resolution: {integrity: sha512-fDW/EZ6Q9RiO8eFG8Hj+7u/oW+XrPTIChwCOM2+th2A6OblDtYYIpve9m+KvI9Z4C9qSEXlaGR6bTEYHReuglA==}
     engines: {node: '>= 0.4'}
@@ -2109,6 +2109,11 @@ snapshots:
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
+
+  '@henchtab/shrek@file:..(@ton/core@0.56.3(@ton/crypto@3.2.0))(@ton/sandbox@0.19.0(@ton/core@0.56.3(@ton/crypto@3.2.0))(@ton/crypto@3.2.0))':
+    dependencies:
+      '@ton/core': 0.56.3(@ton/crypto@3.2.0)
+      '@ton/sandbox': 0.19.0(@ton/core@0.56.3(@ton/crypto@3.2.0))(@ton/crypto@3.2.0)
 
   '@ipld/dag-pb@2.1.18':
     dependencies:
@@ -3841,11 +3846,6 @@ snapshots:
       shebang-regex: 3.0.0
 
   shebang-regex@3.0.0: {}
-
-  shrek@file:..(@ton/core@0.56.3(@ton/crypto@3.2.0))(@ton/sandbox@0.19.0(@ton/core@0.56.3(@ton/crypto@3.2.0))(@ton/crypto@3.2.0)):
-    dependencies:
-      '@ton/core': 0.56.3(@ton/crypto@3.2.0)
-      '@ton/sandbox': 0.19.0(@ton/core@0.56.3(@ton/crypto@3.2.0))(@ton/crypto@3.2.0)
 
   side-channel@1.0.6:
     dependencies:
