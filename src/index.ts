@@ -179,8 +179,6 @@ export class Logger {
   }
 }
 
-// BEGIN HELPERS
-
 /**
  * Shortens a string to the first and last 4 characters, separated by ellipses.
  * @param str The string to shorten.
@@ -247,5 +245,3 @@ export function formatCoins(
     ? "∞"
     : formatCoinsPure(value, precision);
 }
-
-// END HELPERS
