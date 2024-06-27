@@ -23,7 +23,7 @@ Before using the `Logger` class, ensure you have the required dependencies
 installed:
 
 ```bash
-npm install @hencthtab/shreak
+npm install @hencthtab/shrek
 ```
 
 ## Usage
@@ -33,9 +33,8 @@ npm install @hencthtab/shreak
 First, import the required modules and initialize the `Logger` class:
 
 ```typescript
-import { Address, Blockchain } from "@ton/core";
-import { SandboxContract } from "@ton/sandbox";
-import { Logger } from "@henchtab/shrek"; // Adjust the import path accordingly
+import { Blockchain } from "@ton/core";
+import { Logger } from "@henchtab/shrek";
 
 // Initialize the blockchain object (assuming it is already configured)
 const blockchain = new Blockchain(/* configuration */);
