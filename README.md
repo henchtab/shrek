@@ -23,7 +23,7 @@ Before using the `Logger` class, ensure you have the required dependencies
 installed:
 
 ```bash
-npm install @hencthtab/shrek
+npm install @henchtab/shrek
 ```
 
 ## Usage
