@@ -1,6 +1,6 @@
 {
   "name": "@henchtab/shrek",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "description": "Ogres are like onions, and testing your smart contracts on the TON blockchain is no different!",
   "type": "module",
   "exports": {
