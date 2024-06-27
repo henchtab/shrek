@@ -1,8 +1,12 @@
 # Shrek's Logger
 
-The `Logger` class is a utility for logging information about contracts and transactions within a blockchain environment. It provides functionalities to label contracts, retrieve balances, and format transactions for easy readability.
+The `Logger` class is a utility for logging information about contracts and
+transactions within a blockchain environment. It provides functionalities to
+label contracts, retrieve balances, and format transactions for easy
+readability.
 
 ## Table of Contents
+
 1. [Installation](#installation)
 2. [Usage](#usage)
    - [Initialization](#initialization)
@@ -15,7 +19,8 @@ The `Logger` class is a utility for logging information about contracts and tran
 
 ## Installation
 
-Before using the `Logger` class, ensure you have the required dependencies installed:
+Before using the `Logger` class, ensure you have the required dependencies
+installed:
 
 ```bash
 npm install @hencthtab/shreak
@@ -41,7 +46,8 @@ const logger = new Logger(blockchain);
 
 ### Adding Contract Labels
 
-You can add labels to contracts for easy identification. This is useful when you want to refer to contracts by human-readable names rather than their addresses.
+You can add labels to contracts for easy identification. This is useful when you
+want to refer to contracts by human-readable names rather than their addresses.
 
 ```typescript
 // Add a label to a contract
@@ -51,7 +57,8 @@ logger.addContract(contractAddress, "MyContractLabel");
 
 ### Retrieving Contract Labels
 
-To retrieve the label associated with a contract, use the `getContractLabel` method:
+To retrieve the label associated with a contract, use the `getContractLabel`
+method:
 
 ```typescript
 const address = Address.parse("kQ..."); // Replace with actual address
@@ -65,9 +72,9 @@ Retrieve the balance of a contract using the `getContractBalance` method:
 
 ```typescript
 const address = Address.parse("kQ..."); // Replace with actual address.
-logger.getContractBalance(address).then(balance => {
+logger.getContractBalance(address).then((balance) => {
   console.log(`Balance: ${balance}`);
-}).catch(error => {
+}).catch((error) => {
   console.error("Error fetching contract balance:", error);
 });
 ```
@@ -95,7 +102,8 @@ logger.logTransactions(transactions, "Transaction log:").then(() => {
 
 ## Helper Functions
 
-The `Logger` class includes several helper functions to assist with common tasks:
+The `Logger` class includes several helper functions to assist with common
+tasks:
 
 - **shortenString(str: string): string**
   - Shortens a string to the first and last 4 characters, separated by ellipses.
@@ -104,7 +112,8 @@ The `Logger` class includes several helper functions to assist with common tasks
   - Calculates 10 raised to the power of `n`.
 
 - **formatCoins(value: bigint | undefined | null, precision = 6): string**
-  - Formats a coin value to a readable string with a specified precision. Handles undefined or null values by returning `"∞"`.
+  - Formats a coin value to a readable string with a specified precision.
+    Handles undefined or null values by returning `"∞"`.
 
 ### Example:
 
