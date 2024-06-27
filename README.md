@@ -2,8 +2,6 @@
 
 The `Logger` class is a utility for logging information about contracts and transactions within a blockchain environment. It provides functionalities to label contracts, retrieve balances, and format transactions for easy readability.
 
-This `README.md` file provides clear instructions on how to use the `Logger` class, including initialization, adding contract labels, retrieving contract labels, getting contract balances, logging contract balances, logging transactions, and using helper functions.
-
 ## Table of Contents
 1. [Installation](#installation)
 2. [Usage](#usage)
@@ -20,7 +18,7 @@ This `README.md` file provides clear instructions on how to use the `Logger` cla
 Before using the `Logger` class, ensure you have the required dependencies installed:
 
 ```bash
-npm install @ton/core @ton/sandbox
+npm install @hencthtab/shreak
 ```
 
 ## Usage
