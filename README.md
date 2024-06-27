@@ -20,7 +20,7 @@ This `README.md` file provides clear instructions on how to use the `Logger` cla
 Before using the `Logger` class, ensure you have the required dependencies installed:
 
 ```bash
-npm install @ton/core @ton/sandbox
+npm install @hencthtab/shreak
 ```
 
 ## Usage
