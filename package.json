@@ -14,7 +14,21 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "pnpm tsup"
   },
-  "keywords": [],
+  "keywords": [
+    "blockchain",
+    "TON",
+    "smart contracts",
+    "testing",
+    "logger",
+    "sandbox",
+    "contract",
+    "transaction",
+    "ton-core",
+    "ton-sandbox",
+    "typescript",
+    "pnpm",
+    "shrek"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
